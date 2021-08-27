@@ -1,0 +1,9 @@
+.credits > a:hover {
+    text-decoration: none;
+}
+.credits > a:not(:last-child) {
+    margin-right: 1rem;
+}
+.credits > a:not(:last-child)::after {
+    content: ',';
+}
