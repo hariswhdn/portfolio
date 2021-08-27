@@ -8,20 +8,21 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/jquery-3.6.0.slim.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light mb-3">
-      <span><a class="navbar-brand" href="#">Haris' Portfolio</a></span>
+      <span><a class="navbar-brand" href="./index.html">Haris' Portfolio</a></span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://ahmadharisw.blogspot.com/">My blog</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#projects">My project's</a>
           </li>
@@ -51,223 +52,263 @@
         </div>
       </div>
     </div>
-    <hr/>
-    <div class="pt-3" style="font-size: 1.125rem;">
-      <span class="h5 font-weight-light mb-3 d-inline-block">#1</span>
-      <h4 class="h2 font-weight-light text-center mb-3">Animated Comics</h4>
-      <p class="text-center">Product that can compete in the market, for creators and
-        readers satisfication.</p>
-      <h5 class="h4 font-weight-light mb-3 pt-3">My role</h5>
-      <p>Turn research and ideas to designing interface and implement to a functional application.</p>
-      <h5 class="h4 font-weight-light mb-3 pt-3">Project goal</h5>
-      <p>People want to see something more exciting than comics, while making animation is not that easy.
-        Animated
-        Comics come to simplifies animation creation through more exciting comics.</p>
-      <h5 class="h3 font-weight-light mb-3 pt-3">Target audience</h5>
-      <p>Anyone who have hobby to read comics and watch movies.</p>
-      <h5 class="h3 font-weight-light mb-3 pt-3">Key challenges</h5>
-      <p>SVG file format animation tools is not many available for now.</p>
-      <h5 class="h3 font-weight-light mb-3 pt-3">Research study</h5>
-      <p>An alternative for comic and animation creators in providing content for comic and animaton fans.</p>
-      <h6 class="h4 font-weight-light mb-3 ml-3 ml-md-4 pt-3">Pain Points</h6>
-      <div class="row no-gutters ml-3 ml-md-4">
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <p class="h5 font-weight-light mb-3">1. Comic fans</p>
-          <p>Want to be more impressed.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <p class="h5 font-weight-light mb-3">2. Animation fans</p>
-          <p>Want to be more concise.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <p class="h5 font-weight-light mb-3">3. Comic creators</p>
-          <p>Want to explore animation.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-          <p class="h5 font-weight-light mb-3">4. Animation creators</p>
-          <p>Wanted an easier way.</p>
-        </div>
+    <hr />
+    <div id="article" class="pt-3" style="font-size: 1.125rem;">
+      <div class="mb-3 d-flex justify-content-between">
+        <span class="h5 font-weight-light">#1</span>
+        <span id="printThis" class="material-icons">print</span>
       </div>
-      <h6 class="h4 font-weight-light ml-3 ml-md-4 mb-3 pt-3">User journey map</h6>
-      <div class="row no-gutters ml-3 ml-md-4">
-        <div class="order-2 order-md-2 col">
-          <p>Fans wanted something entertaining.</p>
+      <div id="printArea">
+        <div class="print-no-break">
+          <h4 class="h2 font-weight-light text-center mb-3">Animated Comics</h4>
+          <p class="text-center">Product that can compete in the market, for creators and
+            readers satisfication.</p>
         </div>
-        <div class="order-1 order-md-2 col-md-3 col-lg-2">
-          <p class="h5 font-weight-light mb-3">1. Awareness</p>
+        <div class="print-no-break">
+          <h5 class="h4 font-weight-light mb-3 pt-3">My role</h5>
+          <p>Turn research and ideas to designing interface and implement to a functional application.</p>
         </div>
-        <span class="order-2 d-flex d-md-none mb-3 px-3 font-weight-light">></span>
-        <div class="order-2 order-md-2 col">
-          <p>Creators want to make money.</p>
+        <div class="print-no-break">
+          <h5 class="h4 font-weight-light mb-3 pt-3">Project goal</h5>
+          <p>People want to see something more exciting than comics, while making animation is not that easy.
+            Animated
+            Comics come to simplifies animation creation through more exciting comics.</p>
         </div>
-      </div>
-      <div class="row no-gutters ml-3 ml-md-4">
-        <div class="order-2 order-md-2 col">
-          <p>Fans finds animated comics, and sign up as reader.</p>
+        <div class="print-no-break">
+          <h5 class="h3 font-weight-light mb-3 pt-3">Target audience</h5>
+          <p>Anyone who have hobby to read comics and watch movies.</p>
         </div>
-        <div class="order-1 order-md-2 col-md-3 col-lg-2">
-          <p class="h5 font-weight-light mb-3">2. Consideration</p>
+        <div class="print-no-break">
+          <h5 class="h3 font-weight-light mb-3 pt-3">Key challenges</h5>
+          <p>SVG file format animation tools is not many available for now.</p>
         </div>
-        <span class="order-2 d-flex d-md-none mb-3 px-3 font-weight-light">></span>
-        <div class="order-2 order-md-2 col">
-          <p>Creators finds animated comics, and sign up as creator.</p>
-        </div>
-      </div>
-      <div class="row no-gutters ml-3 ml-md-4">
-        <div class="order-2 order-md-2 col">
-          <p>Fans browsing animated comics he wanted.</p>
-        </div>
-        <div class="order-1 order-md-2 col-md-3 col-lg-2">
-          <p class="h5 font-weight-light mb-3">3. Exploration</p>
-        </div>
-        <span class="order-2 d-flex d-md-none mb-3 px-3 font-weight-light">></span>
-        <div class="order-2 order-md-2 col">
-          <p>Creators create his own animated comics.</p>
-        </div>
-      </div>
-      <div class="row no-gutters ml-3 ml-md-4">
-        <div class="order-2 order-md-2 col">
-          <p>Fans read Creator animated comics.</p>
-        </div>
-        <div class="order-1 order-md-2 col-md-3 col-lg-2">
-          <p class="h5 font-weight-light mb-3">4. Conversion</p>
-        </div>
-        <span class="order-2 d-flex d-md-none mb-3 px-3 font-weight-light">></span>
-        <div class="order-2 order-md-2 col">
-          <p>Creators get earning from his viewers.</p>
-        </div>
-      </div>
-      <div class="row no-gutters ml-3 ml-md-4">
-        <div class="order-2 order-md-2 col">
-          <p>Fans want to read more.</p>
-        </div>
-        <div class="order-1 order-md-2 col-md-3 col-lg-2">
-          <p class="h5 font-weight-light mb-3">5. Loyalty</p>
-        </div>
-        <span class="order-2 d-flex d-md-none mb-3 px-3 font-weight-light">></span>
-        <div class="order-2 order-md-2 col">
-          <p>Creators want to earn more.</p>
-        </div>
-      </div>
-      <h5 class="h3 font-weight-light mb-3 pt-3">Initial Design Concepts</h5>
-      <img src="images/initial_design_concepts.png" style="opacity: .75;width: 512px;" class="mw-100 mx-auto d-block mb-3 pt-3"
-        alt="initial_design_concepts">
-      <h5 class="h3 font-weight-light mb-3 pt-3">Low-fidelity</h5>
-      <p>Prototype link on <a href="https://www.figma.com/file/6ROzLaqLPKYoDPfhIh93CT/Untitled?node-id=0%3A1">Figma</a></p>
-      <div class="card-deck mb-3 pt-3">
-        <div class="card border-0">
-          <div class="card-body p-0">
-            <img src="images/low_fidelity-1.png" class="w-100 border rounded" alt="low_fidelity">
+        <div>
+          <h5 class="h3 font-weight-light mb-3 pt-3">Research study</h5>
+          <p>An alternative for comic and animation creators in providing content for comic and animaton fans.</p>
+          <div class="print-no-break">
+            <h6 class="h4 font-weight-light mb-3 ml-3 ml-md-4 pt-3">Pain Points</h6>
+            <div class="row no-gutters ml-3 ml-md-4">
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <p class="h5 font-weight-light mb-3">1. Comic fans</p>
+                <p>Want to be more impressed.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <p class="h5 font-weight-light mb-3">2. Animation fans</p>
+                <p>Want to be more concise.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <p class="h5 font-weight-light mb-3">3. Comic creators</p>
+                <p>Want to explore animation.</p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <p class="h5 font-weight-light mb-3">4. Animation creators</p>
+                <p>Wanted an easier way.</p>
+              </div>
+            </div>
           </div>
-          <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
-            <p class="card-text text-muted mb-0">Login</p>
+          <div class="print-no-break">
+            <h6 class="h4 font-weight-light ml-3 ml-md-4 mb-3 pt-3">User journey map</h6>
+            <div class="row no-gutters ml-3 ml-md-4">
+              <div class="order-2 order-md-2 col">
+                <p>Fans wanted something entertaining.</p>
+              </div>
+              <div class="order-1 order-md-2 col-md-3 col-lg-2">
+                <p class="h5 font-weight-light mb-3 px-md-3">1. Awareness</p>
+              </div>
+              <span class="order-2 d-flex d-md-none mb-3 px-3 text-muted material-icons">chevron_right</span>
+              <div class="order-2 order-md-2 col">
+                <p>Creators want to make money.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card border-0">
-          <div class="card-body p-0">
-            <img src="images/low_fidelity-2.png" class="w-100 border rounded" alt="low_fidelity">
+          <div class="row no-gutters ml-3 ml-md-4">
+            <div class="order-2 order-md-2 col">
+              <p>Fans finds animated comics, and sign up as reader.</p>
+            </div>
+            <div class="order-1 order-md-2 col-md-3 col-lg-2">
+              <p class="h5 font-weight-light mb-3 px-md-3">2. Consideration</p>
+            </div>
+            <span class="order-2 d-flex d-md-none mb-3 px-3 text-muted material-icons">chevron_right</span>
+            <div class="order-2 order-md-2 col">
+              <p>Creators finds animated comics, and sign up as creator.</p>
+            </div>
           </div>
-          <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
-            <p class="card-text text-muted mb-0">Home</p>
+          <div class="row no-gutters ml-3 ml-md-4">
+            <div class="order-2 order-md-2 col">
+              <p>Fans browsing animated comics he wanted.</p>
+            </div>
+            <div class="order-1 order-md-2 col-md-3 col-lg-2">
+              <p class="h5 font-weight-light mb-3 px-md-3">3. Exploration</p>
+            </div>
+            <span class="order-2 d-flex d-md-none mb-3 px-3 text-muted material-icons">chevron_right</span>
+            <div class="order-2 order-md-2 col">
+              <p>Creators create his own animated comics.</p>
+            </div>
+          </div>
+          <div class="row no-gutters ml-3 ml-md-4">
+            <div class="order-2 order-md-2 col">
+              <p>Fans read Creator animated comics.</p>
+            </div>
+            <div class="order-1 order-md-2 col-md-3 col-lg-2">
+              <p class="h5 font-weight-light mb-3 px-md-3">4. Conversion</p>
+            </div>
+            <span class="order-2 d-flex d-md-none mb-3 px-3 text-muted material-icons">chevron_right</span>
+            <div class="order-2 order-md-2 col">
+              <p>Creators get earning from his viewers.</p>
+            </div>
+          </div>
+          <div class="row no-gutters ml-3 ml-md-4">
+            <div class="order-2 order-md-2 col">
+              <p>Fans want to read more.</p>
+            </div>
+            <div class="order-1 order-md-2 col-md-3 col-lg-2">
+              <p class="h5 font-weight-light mb-3 px-md-3">5. Loyalty</p>
+            </div>
+            <span class="order-2 d-flex d-md-none mb-3 px-3 text-muted material-icons">chevron_right</span>
+            <div class="order-2 order-md-2 col">
+              <p>Creators want to earn more.</p>
+            </div>
           </div>
         </div>
-        <div class="card border-0">
-          <div class="card-body p-0">
-            <img src="images/low_fidelity-3.png" class="w-100 border rounded" alt="low_fidelity">
+        <div class="print-no-break">
+          <h5 class="h3 font-weight-light mb-3 pt-3">Initial Design Concepts</h5>
+          <img src="images/initial_design_concepts.png" style="opacity: .75;width: 512px;"
+            class="mw-100 mx-auto d-block mb-3 pt-3" alt="initial_design_concepts">
+        </div>
+        <div>
+          <div class="print-no-break">
+            <h5 class="h3 font-weight-light mb-3 pt-3">Low-fidelity</h5>
+            <p>Prototype link on <a
+                href="https://www.figma.com/file/6ROzLaqLPKYoDPfhIh93CT/Untitled?node-id=0%3A1">Figma</a></p>
           </div>
-          <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
-            <p class="card-text text-muted mb-0">Dashboard</p>
+          <div class="card-deck mb-3 pt-3">
+            <div class="card border-0 print-no-break">
+              <div class="card-body p-0">
+                <img src="images/low_fidelity-1.png" class="w-100 border rounded" alt="low_fidelity">
+              </div>
+              <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
+                <p class="card-text text-muted mb-0">Login</p>
+              </div>
+            </div>
+            <div class="card border-0 print-no-break">
+              <div class="card-body p-0">
+                <img src="images/low_fidelity-2.png" class="w-100 border rounded" alt="low_fidelity">
+              </div>
+              <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
+                <p class="card-text text-muted mb-0">Home</p>
+              </div>
+            </div>
+            <div class="card border-0 print-no-break">
+              <div class="card-body p-0">
+                <img src="images/low_fidelity-3.png" class="w-100 border rounded" alt="low_fidelity">
+              </div>
+              <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
+                <p class="card-text text-muted mb-0">Dashboard</p>
+              </div>
+            </div>
+            <div class="card border-0 print-no-break">
+              <div class="card-body p-0">
+                <img src="images/low_fidelity-4.png" class="w-100 border rounded" alt="low_fidelity">
+              </div>
+              <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
+                <p class="card-text text-muted mb-0">Item</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card border-0">
-          <div class="card-body p-0">
-            <img src="images/low_fidelity-4.png" class="w-100 border rounded" alt="low_fidelity">
+        <div class="print-no-break">
+          <h5 class="h3 font-weight-light mb-3 pt-3">User testing</h5>
+          <h6 class="h4 font-weight-light ml-3 ml-md-4 mb-3 pt-3">Usability study insights</h6>
+          <div class="row no-gutters insights ml-3 ml-md-4">
+            <div class="col-12 col-md-6">
+              <p class="h5 font-weight-light mb-3 pr-md-3">Based on the theme that</p>
+              <p class="pr-md-3"><span class="font-weight-light">1. </span>Do not understand the
+                selection of favorite categories.</p>
+              <p class="pr-md-3"><span class="font-weight-light">2. </span>Don't understand how
+                to make money by submitting works.</p>
+              <p class="pr-md-3"><span class="font-weight-light">3. </span>Confused to find a
+                question and answer page.</p>
+              <p class="pr-md-3"><span class="font-weight-light">4. </span>Confused with the word
+                "merchandise".</p>
+              <p class="pr-md-3"><span class="font-weight-light">5. </span>Confuse to check
+                verification code from email.</p>
+            </div>
+            <div class="col-12 col-md-6">
+              <p class="h5 font-weight-light mb-3 pl-md-3">An insight is</p>
+              <p class="pl-md-3"><span class="font-weight-light">1. </span>Define categories
+                based on what the user has read.</p>
+              <p class="pl-md-3"><span class="font-weight-light">2. </span>Create a more complete
+                creator profile page so that readers understand how the content is created.</p>
+              <p class="pl-md-3"><span class="font-weight-light">3. </span>Add a faq menu in the
+                sidebar.</p>
+              <p class="pl-md-3"><span class="font-weight-light">4. </span>Make questions and
+                answers on the faq menu.</p>
+              <p class="pl-md-3"><span class="font-weight-light">5. </span>Added link to popup
+                how to verify email.</p>
+            </div>
           </div>
-          <div class="card-footer bg-transparent text-center border-0 text-truncate p-0 pt-1">
-            <p class="card-text text-muted mb-0">Item</p>
+        </div>
+        <div>
+          <div class="print-no-break">
+            <h5 class="h4 font-weight-light mb-3 pt-3">High-fidelity prototypes</h5>
+            <p>Prototype link on <a
+                href="https://www.figma.com/file/5uy1xFOwmDEWmHqCcvYULh/Untitled?node-id=0%3A1">Figma</a>
+            </p>
           </div>
+          <img src="images/high_fidelity.png" class="mw-100 mx-auto d-block mb-3 pt-3" style="width: 768px;"
+            alt="high_fidelity">
+          <img src="images/prototypes.gif" class="mw-100 img-fluid mx-auto d-block mb-3 pt-3" style="width: 288px;"
+            alt="prototypes">
         </div>
-      </div>
-      <h5 class="h3 font-weight-light mb-3 pt-3">User testing</h5>
-      <h6 class="h4 font-weight-light ml-3 ml-md-4 mb-3 pt-3">Usability study insights</h6>
-      <div class="row no-gutters insights ml-3 ml-md-4">
-        <div class="col-12 col-md-6">
-          <p class="h5 font-weight-light mb-3 pr-md-3">Based on the theme that</p>
-          <p class="pr-md-3"><span class="font-weight-light">1. </span>Do not understand the
-            selection of favorite categories.</p>
-          <p class="pr-md-3"><span class="font-weight-light">2. </span>Don't understand how
-            to make money by submitting works.</p>
-          <p class="pr-md-3"><span class="font-weight-light">3. </span>Confused to find a
-            question and answer page.</p>
-          <p class="pr-md-3"><span class="font-weight-light">4. </span>Confused with the word
-            "merchandise".</p>
-          <p class="pr-md-3"><span class="font-weight-light">5. </span>Confuse to check
-            verification code from email.</p>
-        </div>
-        <div class="col-12 col-md-6">
-          <p class="h5 font-weight-light mb-3 pl-md-3">An insight is</p>
-          <p class="pl-md-3"><span class="font-weight-light">1. </span>Define categories
-            based on what the user has read.</p>
-          <p class="pl-md-3"><span class="font-weight-light">2. </span>Create a more complete
-            creator profile page so that readers understand how the content is created.</p>
-          <p class="pl-md-3"><span class="font-weight-light">3. </span>Add a faq menu in the
-            sidebar.</p>
-          <p class="pl-md-3"><span class="font-weight-light">4. </span>Make questions and
-            answers on the faq menu.</p>
-          <p class="pl-md-3"><span class="font-weight-light">5. </span>Added link to popup
-            how to verify email.</p>
-        </div>
-      </div>
-      <h5 class="h4 font-weight-light mb-3 pt-3">High-fidelity prototypes</h5>
-      <p>Prototype link on <a href="https://www.figma.com/file/5uy1xFOwmDEWmHqCcvYULh/Untitled?node-id=0%3A1">Figma</a></p>
-      <img src="images/high_fidelity.png" class="mw-100 mx-auto d-block mb-3 pt-3" style="width: 768px;" alt="high_fidelity">
-      <img src="images/prototypes.gif" class="mw-100 img-fluid mx-auto d-block mb-3 pt-3" style="width: 288px;" alt="prototypes">
-      <h5 class="h3 font-weight-light mb-3 next_steps pt-3">Next steps</h5>
-      <div class="row no-gutters next_steps ml-3 ml-md-4 pt-3">
-        <div class="col-12 col-md-6 col-lg-4">
-          <p class="h5 font-weight-light mb-3">#1</p>
-          <p>Usability for users with disabilities so that they can enjoy content comfortably, especially
-            audible
-            content.</p>
-          <p>The reason is for equality and equity of user.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <p class="h5 font-weight-light mb-3">#2</p>
-          <p>Survey of digital transactions that are often used by users to make purchases.</p>
-          <p>The reason is to make the user comfortable during the transaction.</p>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <p class="h5 font-weight-light mb-3">#3</p>
-          <p>Survey software used by creators for content creation.</p>
-          <p>The reason is so that the creator remains familiar with the software he is using.</p>
+        <div class="print-no-break">
+          <h5 class="h3 font-weight-light mb-3 next_steps pt-3">Next steps</h5>
+          <div class="row no-gutters next_steps ml-3 ml-md-4 pt-3">
+            <div class="col-12 col-md-6 col-lg-4">
+              <p class="h5 font-weight-light mb-3">#1</p>
+              <p>Usability for users with disabilities so that they can enjoy content comfortably, especially
+                audible
+                content.</p>
+              <p>The reason is for equality and equity of user.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <p class="h5 font-weight-light mb-3">#2</p>
+              <p>Survey of digital transactions that are often used by users to make purchases.</p>
+              <p>The reason is to make the user comfortable during the transaction.</p>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <p class="h5 font-weight-light mb-3">#3</p>
+              <p>Survey software used by creators for content creation.</p>
+              <p>The reason is so that the creator remains familiar with the software he is using.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <hr/>
+    <hr />
     <div class="credits w-100 list-unstyled mb-3 py-3">
-      <p class="h5 font-weight-light mb-3">Image References and Tools that help me</p>
-      <a href="https://www.webtoons.com/id/drama/ghost-theater/list?title_no=1911/"
+      <p class="h5 font-weight-light mb-3">Image References and Tools I used</p>
+      <a target="_blank" href="https://www.webtoons.com/en/drama/ghost-theater/list?title_no=1911&page=1/"
         alt="Ghost Theater">Ghost Theater</a>
-      <a class="card-link"
-        href="https://www.webtoons.com/id/fantasy/return-my-school-life/list?title_no=1349/"
+      <a target="_blank" class="card-link"
+        href="https://www.webtoons.com/en/fantasy/return-my-school-life/list?title_no=1349&page=1/"
         alt="Return My School Life">Return My School Life</a>
-      <a href="https://www.webtoons.com/id/drama/bts-save-me/list?title_no=1514/"
+      <a target="_blank" href="https://www.webtoons.com/en/drama/bts-save-me/list?title_no=1514&page=1/"
         alt="SAVE ME">SAVE ME</a>
-      <a href="https://calculateaspectratio.com/" alt="Aspect Ratio Calculator">Aspect
+      <a target="_blank" href="https://calculateaspectratio.com/" alt="Aspect Ratio Calculator">Aspect
         Ratio Calculator</a>
-      <a class="card-link"
+      <a target="_blank" class="card-link"
         href="https://www.microsoft.com/en-US/microsoft-4 d-inline-block65/powerpoint/" alt="MS PowerPoint">MS
         PowerPoint</a>
-      <a href="https://techsini.com/multi-mockup/"
-        alt="Multi Device Website Mockup Generator">Multi Device Website Mockup Generator</a>
-      <a href="https://ezgif.com/optimize" alt="Online GIF optimizer">Online GIF
+      <a target="_blank" href="https://techsini.com/multi-mockup/" alt="Multi Device Website Mockup Generator">Multi
+        Device Website Mockup Generator</a>
+      <a target="_blank" href="https://ezgif.com/optimize" alt="Online GIF optimizer">Online GIF
         optimizer</a>
-      <a href="https://www.getpaint.net/" alt="Paint.NET">Paint.NET</a>
-      <a href="https://tinyjpg.com/" alt="TinyJPG">TinyJPG</a>
-      <a href="https://tinypng.com/" alt="TinyPNG">TinyPNG</a>
+      <a target="_blank" href="https://www.getpaint.net/" alt="Paint.NET">Paint.NET</a>
+      <a target="_blank" href="https://tinyjpg.com/" alt="TinyJPG">TinyJPG</a>
+      <a target="_blank" href="https://tinypng.com/" alt="TinyPNG">TinyPNG</a>
     </div>
     <hr>
-    <div id="about" class="card text-center border-0 pt-3">
+    <div id="about" class="card text-center border-0 pt-3 print-no-break">
       <img src="images/photo.jpg" class="rounded-circle mx-auto" width="128" height="128" alt="photo">
       <div class="card-body p-3">
         <h5 class="card-title mb-3">Haris Wahidin</h5>
@@ -283,22 +324,24 @@
           class="btn btn-primary" alt="Go to Google Drive">Download My resume</a>
       </div>
     </div>
-    <hr/>
+    <hr />
     <div class="credits w-100 list-unstyled mb-3 py-3">
-      <p class="h5 font-weight-light mb-3">Tools that help me</p>
-      <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+      <p class="h5 font-weight-light mb-3">Tools for running my website</p>
+      <a target="_blank" href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
         alt="Bootstrap">Bootstrap</a>
-      <a href="https://www.cloudflare.com/" alt="Cloudflare">Cloudflare</a>
-      <a href="https://nic.eu.org/" alt="EU.org">EU.org</a>
-      <a href="https://github.com/" alt="GitHub">GitHub</a>
-      <a href="https://drive.google.com/" alt="Google Drive">Google Drive</a>
-      <a href="https://fonts.google.com/specimen/Inter" alt="Inter">Inter</a>
-      <a href="https://jquery.com/" alt="jQuery">jQuery</a>
+      <a target="_blank" href="https://www.cloudflare.com/" alt="Cloudflare">Cloudflare</a>
+      <a target="_blank" href="https://nic.eu.org/" alt="EU.org">EU.org</a>
+      <a target="_blank" href="https://github.com/" alt="GitHub">GitHub</a>
+      <a target="_blank" href="https://drive.google.com/" alt="Google Drive">Google Drive</a>
+      <a target="_blank" href="https://fonts.google.com/specimen/Inter" alt="Inter">Inter</a>
+      <a target="_blank" href="https://jquery.com/" alt="jQuery">jQuery</a>
     </div>
   </div>
 
+  <script src="js/jquery-3.6.0.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
   <script>
-    function asd() {
+    function responsive() {
       var width = $(window).outerWidth();
       $('.next_steps > div > p:nth-child(2)').attr('style', 'height: unset');
       let aa = $('.next_steps > div:first-child > p:nth-child(2)').outerHeight();
@@ -330,10 +373,15 @@
       }
     }
     $(window).resize(function () {
-      asd();
+      responsive();
     });
     $(function () {
-      asd();
+      responsive();
+      $("#printThis").click(function () {
+        $('.insights > div > p').attr('style', 'height: unset');
+        $('.next_steps > div > p:nth-child(2)').attr('style', 'height: unset');
+        window.print();
+      });
     });
   </script>
 
